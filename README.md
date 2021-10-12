@@ -1,2 +1,2 @@
-# WhySmokingisBad
-A simple display that shows many facts why smoking is bad and people who do so, should quit. 
+# Smoking Statistics: What and Why Smoking is Terrible
+The purpose of this website is to show many smoking facts why smoking is terrible on one webpage so people become aware the dangers of smoking.  
