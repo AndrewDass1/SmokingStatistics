@@ -1,20 +1,3 @@
-#Links:
-
-#Plotly
-#https://www.datacamp.com/community/tutorials/learn-build-dash-python
-#https://plotly.com/python/getting-started/
-#Multiple graphs: https://stackoverflow.com/questions/63459424/how-to-add-multiple-graphs-to-dash-app-on-a-single-browser-page
-
-#World-o-meter:
-#https://www.worldometers.info/world-population/
-
-#API:
-
-#------------------------------------------------------
-
-#Package Installations:
-#dash, requests, dash-renderer
-
 from flask import Flask, render_template
 
 import dash
@@ -114,10 +97,10 @@ app.layout = html.Div(children=[
             Changes in behavior due to the urge to smoke
             '''),
         html.Div(children='''
-            Expensive
+            An Expensive Addiction
             '''),
         html.Div(children='''
-            Develop more diseases, problems breathing, energy
+            Develop more diseases, problems breathing, lack of energy
             '''),
         html.Div(children='''
             Aging and Physical Appearance Changes
@@ -228,6 +211,8 @@ app.layout = html.Div(children=[
                
         '''),
 
+        
+
 
         html.Div([
 
@@ -251,7 +236,7 @@ app.layout = html.Div(children=[
         html.H1(children='Why People Continue to Smoke'),
         html.Div(children='''
             People continue to smoke cigarettes since it has an addictive chemical called nicotine. 
-            Nicotine is responsible for changing the nervous system which why people often see smokers have changes in their mood or behavior. [6]  
+            Nicotine is responsible for changing the nervous system which why people often see smokers have changes in their mood or behavior. [8]  
         '''),
     ]),
 
@@ -260,6 +245,43 @@ app.layout = html.Div(children=[
         html.Div(children='''
              There are organizations dedicated to help people quit smoking. Please contact the CDC or Quit.com for assistance.  
         '''),
+    ]),
+
+    html.Div([
+        html.H1(children='Sources'),
+
+        html.Div(children='''
+             https://tobaccofreelife.org/tobacco/tobacco-history/ [1] 
+        '''),
+
+        html.Div(children='''
+             https://www.swedish.org/classes-and-resources/smoking-cessation/history-of-tobacco-use-in-america [2] 
+        '''),
+
+        html.Div(children='''
+             https://www.quitsmokingsupport.com/ingredients.htm [3]
+        '''),
+
+        html.Div(children='''
+             https://www.lung.org/research/sotc/by-the-numbers/10-worst-diseases-smoking-causes [4]
+        '''),
+
+        html.Div(children='''
+             https://www.worldometers.info/world-population/ [5] 
+        '''),
+
+        html.Div(children='''
+             https://simple.wikipedia.org/wiki/List_of_U.S._states_by_population [6]
+        '''),
+
+        html.Div(children='''
+             https://www.cdc.gov/tobacco/campaign/tips/resources/data/cigarette-smoking-in-united-states.html#:~:text=The%20cigarette%20smoking%20rates%20of%20adults%20within%20the,17.0%25%20%20%20%E2%89%A565%20%20%208.2%25%20 [7]
+        '''),
+
+        html.Div(children='''
+             https://tobaccofreelife.org/why-quit-smoking/smoking-effects/nicotine-effects/ [8]
+        '''),
+        
     ]),
 
 
@@ -284,4 +306,7 @@ app.layout = html.Div(children=[
 ])
 
 if __name__ == "__main__":
-    app.run_server(host='localhost', port = 8050, debug=True)
+    app.run_server(port = 8050, debug=True)
+
+# if __name__ == "__main__":
+#     app.run_server(host='localhost', port = 8050, debug=True)
